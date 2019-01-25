@@ -30,10 +30,12 @@ public class Person1 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-		if (input != null) {
-			String lastTwo = input.substring(input.length() - 2);
-			String first = input.substring(0, input.length() - 2);
-			return lastTwo + first;
+		if (input != null && input.length() > 2) {
+			String last = input.substring(2);
+			String first = input.substring(0, 2);
+			return last + first;
+		} else if (input != null && input.length() <= 2) {
+			return input;
 		}
 	  //Person 1 put your implementation here
 	    return null;
