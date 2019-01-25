@@ -33,9 +33,9 @@ public class Person2 {
 		int len = input.length();
 		String newStr = "";
 		for (int i = 0; i > len; i++) {
-			int rand  = (int) Math.random(input.length);
+			int rand  = (int) Math.random() * input.length();
 			newStr += input.charAt(rand);
-			input = str.substring(0, rand) + str.substring(rand + 1);
+			input = newStr.substring(0, rand) + newStr.substring(rand + 1);
 		}
 		return newStr;
 	}

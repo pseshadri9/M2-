@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1" sequence="0" timestamp="1548446150575" analysisTimestamp="1548446150628" release="">
+  <Project projectName="">
+    <Jar>/Users/nicholasgrana/Desktop/M2-/build/classes/java/main</Jar>
+    <AuxClasspathEntry>/Users/nicholasgrana/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/3.6.7.Final/152a97fc12d8d288763e19ae5b672c0b4943ba26/hibernate-core-3.6.7.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nicholasgrana/Desktop/M2-/lib/resources.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nicholasgrana/.gradle/caches/modules-2/files-2.1/antlr/antlr/2.7.6/cf4f67dae5df4f9932ae7810f4548ef3e14dd35e/antlr-2.7.6.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nicholasgrana/.gradle/caches/modules-2/files-2.1/commons-collections/commons-collections/3.1/40fb048097caeacdb11dbb33b5755854d89efdeb/commons-collections-3.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nicholasgrana/.gradle/caches/modules-2/files-2.1/dom4j/dom4j/1.6.1/5d3ccc056b6f056dbf0dddfdf43894b9065a8f94/dom4j-1.6.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nicholasgrana/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-commons-annotations/3.2.0.Final/ce990611448fc2865469e3b68d2fe76b050e3c4f/hibernate-commons-annotations-3.2.0.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nicholasgrana/.gradle/caches/modules-2/files-2.1/org.hibernate.javax.persistence/hibernate-jpa-2.0-api/1.0.1.Final/3306a165afa81938fc3d8a0948e891de9f6b192b/hibernate-jpa-2.0-api-1.0.1.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nicholasgrana/.gradle/caches/modules-2/files-2.1/javax.transaction/jta/1.1/2ca09f0b36ca7d71b762e14ea2ff09d5eac57558/jta-1.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nicholasgrana/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.6.1/6f3b8a24bf970f17289b234284c94f43eb42f0e4/slf4j-api-1.6.1.jar</AuxClasspathEntry>
+    <SrcDir>/Users/nicholasgrana/Desktop/M2-/src/main/java/edu/gatech/oad/antlab/pkg2/AntLab21.java</SrcDir>
+    <SrcDir>/Users/nicholasgrana/Desktop/M2-/src/main/java/edu/gatech/oad/antlab/pkg2/AntLab22.java</SrcDir>
+    <SrcDir>/Users/nicholasgrana/Desktop/M2-/src/main/java/edu/gatech/oad/antlab/person/Person4.java</SrcDir>
+    <SrcDir>/Users/nicholasgrana/Desktop/M2-/src/main/java/edu/gatech/oad/antlab/person/Person5.java</SrcDir>
+    <SrcDir>/Users/nicholasgrana/Desktop/M2-/src/main/java/edu/gatech/oad/antlab/person/Person2.java</SrcDir>
+    <SrcDir>/Users/nicholasgrana/Desktop/M2-/src/main/java/edu/gatech/oad/antlab/person/Person3.java</SrcDir>
+    <SrcDir>/Users/nicholasgrana/Desktop/M2-/src/main/java/edu/gatech/oad/antlab/person/Person1.java</SrcDir>
+    <SrcDir>/Users/nicholasgrana/Desktop/M2-/src/main/java/edu/gatech/oad/antlab/pkg1/AntLabMain.java</SrcDir>
+    <SrcDir>/Users/nicholasgrana/Desktop/M2-/src/main/java/edu/gatech/oad/antlab/pkg1/AntLab11.java</SrcDir>
+    <SrcDir>/Users/nicholasgrana/Desktop/M2-/src/main/java/edu/gatech/oad/antlab/pkg1/AntLab12.java</SrcDir>
+  </Project>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="edu.gatech.oad.antlab.person.Person4">
+      <SourceLine classname="edu.gatech.oad.antlab.person.Person4" start="19" end="48" sourcefile="Person4.java" sourcepath="edu/gatech/oad/antlab/person/Person4.java"/>
+    </Class>
+    <Method classname="edu.gatech.oad.antlab.person.Person4" name="calc" signature="(Ljava/lang/String;)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="edu.gatech.oad.antlab.person.Person4" start="33" end="36" startBytecode="0" endBytecode="151" sourcefile="Person4.java" sourcepath="edu/gatech/oad/antlab/person/Person4.java"/>
+    </Method>
+    <SourceLine classname="edu.gatech.oad.antlab.person.Person4" start="35" end="35" startBytecode="13" endBytecode="13" sourcefile="Person4.java" sourcepath="edu/gatech/oad/antlab/person/Person4.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="4">
+    <MissingClass>java.io.PrintStream</MissingClass>
+    <MissingClass>java.lang.Object</MissingClass>
+    <MissingClass>java.lang.String</MissingClass>
+    <MissingClass>java.lang.StringBuilder</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Fri, 25 Jan 2019 14:55:50 -0500" total_classes="10" referenced_classes="11" total_bugs="1" total_size="108" num_packages="3" java_version="10.0.2" vm_version="10.0.2+13" cpu_seconds="2.90" clock_seconds="0.92" peak_mbytes="165.41" alloc_mbytes="512.00" gc_seconds="0.01" priority_2="1">
+    <PackageStats package="edu.gatech.oad.antlab.person" total_bugs="1" total_types="5" total_size="55" priority_2="1">
+      <ClassStats class="edu.gatech.oad.antlab.person.Person1" sourceFile="Person1.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="edu.gatech.oad.antlab.person.Person2" sourceFile="Person2.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="edu.gatech.oad.antlab.person.Person3" sourceFile="Person3.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="edu.gatech.oad.antlab.person.Person4" sourceFile="Person4.java" interface="false" size="13" bugs="1" priority_2="1"/>
+      <ClassStats class="edu.gatech.oad.antlab.person.Person5" sourceFile="Person5.java" interface="false" size="12" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="edu.gatech.oad.antlab.pkg1" total_bugs="0" total_types="3" total_size="43">
+      <ClassStats class="edu.gatech.oad.antlab.pkg1.AntLab11" sourceFile="AntLab11.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="edu.gatech.oad.antlab.pkg1.AntLab12" sourceFile="AntLab12.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="edu.gatech.oad.antlab.pkg1.AntLabMain" sourceFile="AntLabMain.java" interface="false" size="33" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="edu.gatech.oad.antlab.pkg2" total_bugs="0" total_types="2" total_size="10">
+      <ClassStats class="edu.gatech.oad.antlab.pkg2.AntLab21" sourceFile="AntLab21.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="edu.gatech.oad.antlab.pkg2.AntLab22" sourceFile="AntLab22.java" interface="false" size="5" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="44" invocations="26" avgMicrosecondsPerInvocation="1719" maxMicrosecondsPerInvocation="11182" standardDeviationMircosecondsPerInvocation="3178"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="35" invocations="26" avgMicrosecondsPerInvocation="1374" maxMicrosecondsPerInvocation="31732" standardDeviationMircosecondsPerInvocation="6075"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="24" invocations="26" avgMicrosecondsPerInvocation="929" maxMicrosecondsPerInvocation="9316" standardDeviationMircosecondsPerInvocation="1964"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="22" invocations="26" avgMicrosecondsPerInvocation="871" maxMicrosecondsPerInvocation="4791" standardDeviationMircosecondsPerInvocation="1294"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="22" invocations="26" avgMicrosecondsPerInvocation="850" maxMicrosecondsPerInvocation="6420" standardDeviationMircosecondsPerInvocation="1418"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="20" invocations="26" avgMicrosecondsPerInvocation="799" maxMicrosecondsPerInvocation="7963" standardDeviationMircosecondsPerInvocation="1598"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="19" invocations="152" avgMicrosecondsPerInvocation="131" maxMicrosecondsPerInvocation="12467" standardDeviationMircosecondsPerInvocation="1013"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="17" invocations="26" avgMicrosecondsPerInvocation="677" maxMicrosecondsPerInvocation="6273" standardDeviationMircosecondsPerInvocation="1192"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="16" invocations="20" avgMicrosecondsPerInvocation="821" maxMicrosecondsPerInvocation="13402" standardDeviationMircosecondsPerInvocation="2907"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="12" invocations="10" avgMicrosecondsPerInvocation="1212" maxMicrosecondsPerInvocation="12012" standardDeviationMircosecondsPerInvocation="3600"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="11" invocations="155" avgMicrosecondsPerInvocation="76" maxMicrosecondsPerInvocation="887" standardDeviationMircosecondsPerInvocation="88"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="11" invocations="10" avgMicrosecondsPerInvocation="1179" maxMicrosecondsPerInvocation="9488" standardDeviationMircosecondsPerInvocation="2779"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
